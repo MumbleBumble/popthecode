@@ -1,0 +1,31 @@
+<! Doctype html>
+<html>
+    <head>
+        <title>PopTheCode | Home</title>
+        <meta content="width=device-width; initial-scale=1.0; maximum-scale-1.0; user-scalable=0;" name="viewport">
+        <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Rammetto+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="/static/css/cbdb-search-form.css">
+        <!-- Favicon -->
+        <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    </head>
+
+    {% block content %}
+
+    <body width="device-width">
+        <div class="main-image">
+            <h1>Oh No!</h1>
+            <h3>Your party ({{url}}) could not be reached!</h3>
+            <img src='/static/images/logo.gif' alt="PopTheCode!">
+            <h1><a href='/'>Try again...?</a></h1>
+        </div>
+        <div class="sitemap">
+            <small><a href="./about.html">About</a>|<a href="./contact.html">Contact</a></small>
+        </div>
+    </body>
+
+    {% endblock %}
+
+</html>
+

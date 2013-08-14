@@ -1,0 +1,37 @@
+{% extends "search/base.html" %}
+<! Doctype html>
+<html>
+    {% block content %}
+
+    <body width="device-width">
+        <div class="main-image">
+            <h1>PopTheCode</h1>
+            <h3>View source code on any browser, anywhere!</h3>
+            <img src='static/images/logo.gif' alt="PopTheCode!">
+        </div>
+        <div class="searchbox">
+            <form id="search-form" action='/search/' method="get">
+                <input type="text" name="url" value="{{url}}">
+                <input type="submit" value="Go!" />
+            </form>
+        </div>
+        <br>
+        <select>
+            <option value="iPhone">iPhone</option>
+            <option value="PC">PC</option>
+            <option value="Mac">Mac</option>
+            <option value="Linux">Linux</option>
+            <option value="Android">Android</option>
+        </select>
+        <select>
+            <option value="Safari">Safari</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Netscape">Netscape</option>
+        </select>
+    </body>
+
+    {% endblock %}
+
+</html>
+
